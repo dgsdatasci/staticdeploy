@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar {
+            background-color: #68c2ef;
+            text-align: center;
+            padding: 10px 16px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 8px 16px;
+            color: #f8f8fa;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+
+        .navbar a:hover {
+            background-color: #1d3d44;
+        }
+
+        .active {
+            background-color: #191818;
+            color: #0c0b0b;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .black-box {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 45px;
+        }
+
+        .link-container {
+            text-align: right;
+            font-size: 18px;
+        }
+
+        .link-container a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 12px;
+        }
+
+        .link-container a:hover {
+            color: #68c2ef;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <nav class="navbar">
+            <a class="nav-item" href="/about.html">About</a>
+            <a class="nav-item" href="/projects.html">Projects</a>
+            <a class="nav-item" href="/contact.html">Contact</a>
+        </nav>
+
+        <div class="content">
+            <style>
+                .container {
+                  display: flex;
+                  justify-content: center; /* Center the columns horizontally */
+                  align-items: center;
+                  height: 80vh;
+                }
+              
+                .column {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+              
+                .animated-box {
+                  width: 600px;
+                  height: 300px;
+                  margin: 10px;
+                  background-color: #6fbef4; /* Blue background color */
+                  color: #fff; /* White text color */
+                  text-align: center;
+                  line-height: 150px;
+                  font-size: 28px;
+                  text-decoration: none;
+                  font-family: 'Open Sans', sans-serif;
+                  border-radius: 10px; /* Add rounded corners */
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+                  opacity: 0;
+                  transform: translateY(-20px);
+                  animation: fadeInUp 1s ease-out forwards;
+                }
+            
+                /* Hover effect for boxes */
+                .animated-box:hover {
+                  transform: translateY(-10px);
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+              
+                @keyframes fadeInUp {
+                  to {
+                    opacity: 1;
+                    transform: translateY(0);
+                  }
+                }
+              </style>
+            
+              <div class="container">
+                <div class="column"> <!-- New container for the left column -->
+                  <a href="/datasetanalysis.html" class="animated-box">
+                    <p>Dataset Analysis</p>
+                  </a>
+                </div>
+            
+                <div class="column"> <!-- New container for the right column -->
+                  <a href="/miscprojects.html" class="animated-box">
+                    <p>Misc Projects</p>
+                  </a>
+                </div>
+              </div>
+        </div>
+
+        <div class="black-box">
+            <div class="link-container">
+                <a href="https://www.linkedin.com/in/dylan-skalman-0177a11a3/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.kaggle.com/dylandsi" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
+                <a href="https://github.com/dgsdatasci" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
