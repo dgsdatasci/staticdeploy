@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar {
+            background-color: #68c2ef;
+            text-align: center;
+            padding: 10px 16px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 8px 16px;
+            color: #f8f8fa;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+
+        .navbar a:hover {
+            background-color: #1d3d44;
+        }
+
+        .active {
+            background-color: #191818;
+            color: #0c0b0b;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .black-box {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 45px;
+        }
+
+        .link-container {
+            text-align: right;
+            font-size: 18px;
+        }
+
+        .link-container a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 12px;
+        }
+
+        .link-container a:hover {
+            color: #68c2ef;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <nav class="navbar">
+            <a class="nav-item" href="/about.html">About</a>
+            <a class="nav-item" href="/projects.html">Projects</a>
+            <a class="nav-item" href="/contact.html">Contact</a>
+        </nav>
+
+        <div class="content">
+            <!-- Your page content goes here -->
+        </div>
+
+        <div class="black-box">
+            <div class="link-container">
+                <a href="https://www.linkedin.com/in/dylan-skalman-0177a11a3/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.kaggle.com/dylandsi" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
+                <a href="https://github.com/dgsdatasci" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
