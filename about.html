@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar {
+            background-color: #68c2ef;
+            text-align: center;
+            padding: 10px 16px;
+        }
+
+        .navbar a {
+            display: inline-block;
+            padding: 8px 16px;
+            color: #f8f8fa;
+            text-decoration: none;
+            margin-right: 22px;
+        }
+
+        .navbar a:hover {
+            background-color: #1d3d44;
+        }
+
+        .active {
+            background-color: #191818;
+            color: #0c0b0b;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .black-box {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 45px;
+        }
+
+        .link-container {
+            text-align: right;
+            font-size: 18px;
+        }
+
+        .link-container a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 12px;
+        }
+
+        .link-container a:hover {
+            color: #68c2ef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="navbar">
+            <a class="nav-item" href="/index.html">About</a>
+            <a class="nav-item" href="/projects.html">Projects</a>
+            <a class="nav-item" href="/contact.html">Contact</a>
+        </nav>
+
+        <div class="content">
+            <div id="content-wrapper">
+                <!-- Grand Canyon Image -->
+                <div id="grand-canyon" style="text-align: center; margin-top: 20px;">
+                    <div style="max-width: 100%; max-height: 300px; overflow: hidden; border: 3px solid #020202; border-radius: 10px;">
+                        <img src="static/Grand_Canyon.jpeg" alt="Grand Canyon Image" style="width: 100%; height: auto; border-radius: 5px;">
+                    </div>
+                    <p style="margin-top: 10px; font-style: italic; color: #555;">Captivating view of the Grand Canyon</p>
+                </div>
+            
+                <div id="flex-container" style="display: flex; align-items: flex-start; margin-top: 20px; margin-right: 10px;">
+                    <!-- Professional Headshot Image -->
+                    <div style="flex: 0 0 200px; margin-left: 20px; border: 2px solid #9f9c9c; border-radius: 3px; padding: 10px;">
+                        <img src="static/Professional_Headshot.jpeg" alt="Your Name" style="width: 100%; height: auto; object-fit: contain; border-radius: 5px;">
+                    </div>
+            
+                    <!-- About Me Section -->
+                    <div id="about-me" style="max-width: 900px; margin-left: 30px;">
+                        <h2 style="text-align: center; font-family: 'Oleo Script', cursive; font-weight: 400;">About Me</h2>
+                        <p>
+                            I am a data science enthusiast currently pursuing a master's degree in Data Science & Analytics at Buffalo State University.
+                        </p>
+                        <p>
+                            With a background in Molecular Genetics from SUNY Fredonia, I come with a unique combination of analytical thinking and reasoning.
+                        </p>
+                        <p>
+                            I am eager to contribute my expertise to impactful projects, collaborate with like-minded professionals, and continue to grow my data science skill set.
+                        </p>
+                        <h2 style="margin-top: 250px; text-align: center; font-family: 'Oleo Script', cursive;">Skills</h2>
+                    <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap;">
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Times New Roman', cursive; font-size: 18px; font-weight: bold;">Python</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Times New Roman', cursive; font-size: 18px; font-weight: bold;">Microsoft Excel</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Times New Roman', cursive; font-size: 18px; font-weight: bold;">Tableau</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Times New Roman', cursive; font-size: 18px; font-weight: bold;">SQL</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Oleo Script', cursive; font-size: 18px;">Data Analysis</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Oleo Script', cursive; font-size: 18px;">Data Visualization</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Oleo Script', cursive; font-size: 18px;">Predictive Modeling</span>
+                        </li>
+                        <li style="width: 25%; box-sizing: border-box; margin-bottom: 10px;">
+                            <span style="font-family: 'Oleo Script', cursive; font-size: 18px;">Data Engineering</span>
+                        </li>
+                    </ul>
+                    </div>
+            
+                    <div style="margin-left: 30px;">
+                        <div style="margin-bottom: 10px; background-color: #9f9c9c; color: #000000; font-size: 16px;"></div>
+            
+                        <div id="education-box" style="margin-bottom: 10px; background-color: #f2f2f2; color: #000000; font-size: 16px;">
+                            <div style="border: 2px solid #9f9c9c; padding: 10px; border-radius: 3px; width: 600px; text-align: center;">
+                                <h3>Education</h3>
+                                <!-- Education Content-->
+                                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                    <li>
+                                        <span style="text-decoration: underline;">Master of Science in Data Science and Analytics Student</span><br><br>
+                                        <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                                            <li>- State University of New York at Buffalo State, expected graduation spring 2024</li><br>
+                                            <li>- Machine learning project certificate of excellence</li><br><br>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span style="text-decoration: underline;">Bachelor of Science in Molecular Genetics</span><br><br>
+                                        <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                                            <li>- State University of New York at Fredonia, December 2021</li><br>
+                                            <li>- Tri Beta National Honor Society, Dean's List (2), Fredonia Veterans Scholarship (3)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <!-- Professional Experience Box -->
+                        <div id="experience-box" style="margin-bottom: 10px; background-color: #f2f2f2; color: #000000; font-size: 16px;">
+                            <div style="border: 2px solid #9f9c9c; padding: 10px; border-radius: 3px; width: 600px; text-align: center;">
+                                <h3>Professional Experience</h3>
+                                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                                    <li>
+                                        <span style="text-decoration: underline;">Securities & Derivatives Associate Analyst, Citibank July 2023 to present</span><br><br>
+                                        <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                                            <li>- Follow established procedures to support an expansive array of product services related to securities and derivatives settlements.</li><br>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span style="text-decoration: underline;">Quality Control Technician, Immco Diagnostics May 2022 to January 2023</span><br><br>
+                                        <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                                            <li>- Performed a wide array of laboratory testing including Western Blot, LIA/Lyme, IFA assays, and ELISA and
+                                                interpreted test results to determine if products conform to applicable requirements and specifications.</li><br>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span style="text-decoration: underline;">Molecular Technician, Quadrant Biosciences, February 2022 to March 2022</span><br><br>
+                                        <ul style="text-align: center; list-style-type: none; padding: 0; margin: 0;">
+                                            <li>- Served in a high throughput COVID testing laboratory by performing sample accessioning, sample
+                                                pooling, RNA Extraction & RT-PCR.</li><br>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="black-box">
+            <div class="link-container">
+                <a href="https://www.linkedin.com/in/dylan-skalman-0177a11a3/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.kaggle.com/dylandsi" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
+                <a href="https://github.com/dgsdatasci" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
